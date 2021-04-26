@@ -1,0 +1,17 @@
+#container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-content: flex-start;
+}
+#agregarComentario{
+    display: flex;
+    flex-direction: column;
+    width: 408px;
+}
+input{
+    width: 400px;
+}
+#comentario{
+    padding-block: 30px;
+}
