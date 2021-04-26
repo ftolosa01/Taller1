@@ -17,12 +17,19 @@ function Cargar(){
     `<div class="alert alert-primary" role="alert">
         ${listaComentarios}
     </div>`).join(``);
-    contador = contador + 1;
 }
 function addArray(){
+    if(listaComentarios.length >= 4){
+        reemplazarPrimerElementoarray();
+    }else{
     listaComentarios.push(`${autor.value}  ${comentario.value}`);
-    console.log(listaComentarios);
+    }
     Cargar();
+}
+
+function reemplazarPrimerElementoarray(){
+    listaComentarios.splice(`${contador}`,1,`${autor.value}  ${comentario.value}`)
+    contador = contador + 1;
 }
 
 
